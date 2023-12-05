@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Navlinks from './ui/Navlinks'
+import Nav from './ui/Nav'
 
 // layout
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navlinks />
+        <Nav />
         {children}
       </body>
     </html>
