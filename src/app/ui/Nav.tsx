@@ -42,6 +42,11 @@ export default function Navlinks() {
                 About
               </Link>
             </li>
+            <li className="p-4">
+              <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`}>
+                Sign In
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="lg:hidden" onClick={handleClick}>
@@ -64,6 +69,11 @@ export default function Navlinks() {
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
           <Link href="/about" className={`${pathname === '/about' ? 'active' : ''}`} onClick={handleClose}>
             About
+          </Link>
+        </li>
+        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+          <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`} onClick={handleClose}>
+            Sign In
           </Link>
         </li>
       </ul>
