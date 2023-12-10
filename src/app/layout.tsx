@@ -1,7 +1,9 @@
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Nav from './ui/Nav'
+import { AuthProvider } from './admin/AuthContext'
 
 // layout
 
