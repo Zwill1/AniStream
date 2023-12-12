@@ -1,3 +1,4 @@
+// Use client to handle state management for mobile
 'use client';
 
 import Link from "next/link";
@@ -8,10 +9,11 @@ import { useState } from "react";
 
 export default function Navlinks() {
 
+  // Server component
   // get current path directory to pass active class depending on the page
   const pathname =  usePathname();
 
-  // operates nav and mobile nav
+  // operates nav and mobile nav (use client)
   const [nav, setNav] = useState(false);
 
   const handleClick = () => setNav(!nav);
