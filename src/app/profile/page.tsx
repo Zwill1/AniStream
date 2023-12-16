@@ -7,9 +7,7 @@ export default async function Profile() {
 
   if(!session) {
     redirect('/api/auth/signin?callbackUrl=/profile')
-  } else {
-    redirect('/')
-  }
+  } 
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
