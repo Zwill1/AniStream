@@ -45,8 +45,8 @@ export default function Navlinks() {
               </Link>
             </li>
             <li className="p-4">
-              <Link href="/profile" className={`${pathname === '/profile' ? 'active' : ''}`}>
-                Profile
+              <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`}>
+                Sign In
               </Link>
             </li>
           </ul>
@@ -74,8 +74,8 @@ export default function Navlinks() {
           </Link>
         </li>
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
-          <Link href="/profile" className={`${pathname === '/profile' ? 'active' : ''}`} onClick={handleClose}>
-            Profile
+          <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`} onClick={handleClose}>
+            Sign In
           </Link>
         </li>
       </ul>
