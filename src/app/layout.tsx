@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Nav from './ui/Nav'
 import { AuthProvider } from './admin/AuthContext'
+import Hero from './ui/Hero'
 
 // layout
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Nav />
+        <Hero />
         {children}
       </body>
     </html>
