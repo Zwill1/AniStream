@@ -3,8 +3,12 @@
 import AnimeCard, {AnimeProp} from "./components/AnimeCard";
 import LoadMore from "./components/LoadMore";
 import { data } from "./_data";
+import { fetchAnime } from "./action";
 
-export default function Home() {
+async function Home() {
+
+  await fetchAnime();
+
   return (
     // <main className="flex min-h-screen flex-col items-center justify-between">
     //   <p>sds</p>
@@ -23,3 +27,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;
