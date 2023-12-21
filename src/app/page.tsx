@@ -4,16 +4,17 @@ import AnimeCard, {AnimeProp} from "./components/AnimeCard";
 import LoadMore from "./components/LoadMore";
 // import { data } from "./_data";
 import { fetchAnime } from "./action";
+import Hero from "./ui/Hero";
 
 async function Home() {
 
   const data = await fetchAnime(1);
 
   return (
-    // <main className="flex min-h-screen flex-col items-center justify-between">
-    //   <p>sds</p>
-    // </main>
     <>
+      <section className="w-full">
+        <Hero />
+      </section>
       <main className="sm:p-16 py-16 px-8 flex flex-col gap-10">
         <h2 className="text-3xl text-white font-bold">Explore Anime</h2>
 

@@ -45,6 +45,21 @@ export default function Navlinks() {
               </Link>
             </li>
             <li className="p-4">
+              <Link href="/ongoing" className={`${pathname === '/ongoing' ? 'active' : ''}`}>
+                Ongoing
+              </Link>
+            </li>
+            <li className="p-4">
+              <Link href="/upcoming" className={`${pathname === '/upcoming' ? 'active' : ''}`}>
+                Upcoming
+              </Link>
+            </li>
+            <li className="p-4">
+              <Link href="/schedule" className={`${pathname === '/schedule' ? 'active' : ''}`}>
+                Schedule
+              </Link>
+            </li>
+            <li className="p-4">
               <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`}>
                 Sign In
               </Link>
@@ -71,6 +86,21 @@ export default function Navlinks() {
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
           <Link href="/about" className={`${pathname === '/about' ? 'active' : ''}`} onClick={handleClose}>
             About
+          </Link>
+        </li>
+        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+          <Link href="/ongoing" className={`${pathname === '/ongoing' ? 'active' : ''}`} onClick={handleClose}>
+            Ongoing
+          </Link>
+        </li>
+        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+          <Link href="/upcoming" className={`${pathname === '/upcoming' ? 'active' : ''}`} onClick={handleClose}>
+            Upcoming
+          </Link>
+        </li>
+        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+          <Link href="/schedule" className={`${pathname === '/schedule' ? 'active' : ''}`} onClick={handleClose}>
+            Schedule
           </Link>
         </li>
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
