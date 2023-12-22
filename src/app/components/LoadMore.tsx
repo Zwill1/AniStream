@@ -23,7 +23,7 @@ function LoadMore() {
         page++
       });
     }
-  }, [inView, data])
+  }, [inView, data]);
 
   return (
     <>
