@@ -7,7 +7,7 @@ export const fetchOngoingAnime = async (limit : number) => {
 
     const data = await response.json();
 
-    console.log(data);
+    // console.log(data);
 
     return data.map((item: AnimeProp, index: number) => (
         <AnimeCard key={item.id} anime={item} index={index} />

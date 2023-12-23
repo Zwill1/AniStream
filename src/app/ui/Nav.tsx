@@ -40,11 +40,6 @@ export default function Navlinks() {
               </Link>
             </li>
             <li className="p-4">
-              <Link href="/about" className={`${pathname === '/about' ? 'active' : ''}`}>
-                About
-              </Link>
-            </li>
-            <li className="p-4">
               <Link href="/ongoing" className={`${pathname === '/ongoing' ? 'active' : ''}`}>
                 Ongoing
               </Link>
@@ -76,11 +71,6 @@ export default function Navlinks() {
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
           <Link href="/" className={`${pathname === '/' ? 'active' : ''}`} onClick={handleClose}>
             Home
-          </Link>
-        </li>
-        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
-          <Link href="/about" className={`${pathname === '/about' ? 'active' : ''}`} onClick={handleClose}>
-            About
           </Link>
         </li>
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
