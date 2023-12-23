@@ -40,6 +40,11 @@ export default function Navlinks() {
               </Link>
             </li>
             <li className="p-4">
+              <Link href="/anime" className={`${pathname === '/anime' ? 'active' : ''}`}>
+                Anime
+              </Link>
+            </li>
+            <li className="p-4">
               <Link href="/ongoing" className={`${pathname === '/ongoing' ? 'active' : ''}`}>
                 Ongoing
               </Link>
@@ -71,6 +76,11 @@ export default function Navlinks() {
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
           <Link href="/" className={`${pathname === '/' ? 'active' : ''}`} onClick={handleClose}>
             Home
+          </Link>
+        </li>
+        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+          <Link href="/anime" className={`${pathname === '/anime' ? 'active' : ''}`} onClick={handleClose}>
+            Anime
           </Link>
         </li>
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { MotionDiv } from "./MotionDiv";
+import Link from "next/link";
 
 export interface AnimeProp {
   id: string;
@@ -27,12 +28,15 @@ function AnimeCard({ anime, index }: Prop) {
   return (
     <MotionDiv variants={variants} initial="hidden" animate="visible" transition={{delay: index * 0.25, ease: "easeInOut", duration: 0.5,}} viewport={{amount: 0}} className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
+      <Link href={`/anime/${anime.id}`}>
         <Image
           src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
           fill
           className="rounded-xl"
         />
+      </Link>
+
       </div>
       <div className="py-4 flex flex-col gap-3">
         <div className="flex justify-between items-center gap-1">
@@ -67,6 +71,7 @@ function AnimeCard({ anime, index }: Prop) {
               className="object-contain"
             />
             <p className="text-base font-bold text-[#FFAD49]">{anime.score}</p>
+            <p>anime id: {anime.id}</p>
           </div>
         </div>
       </div>
