@@ -1,4 +1,14 @@
-export default async function AnimeProfile() {
+import { fetchAnimeById } from "@/app/actionProfilePageData"
+
+export default async function AnimeProfile({ params }: { params: { id: string } }) {
+
+  const newUrlId = Number(params.id);
+
+  console.log(params);  // string number
+  console.log(newUrlId); // number converted from string
+
+  const data = await fetchAnimeById(newUrlId);
+
   return (
     <>
       <section className="w-full">
@@ -7,7 +17,8 @@ export default async function AnimeProfile() {
         <h2 className="text-3xl text-white font-bold">Profile page id</h2>
 
         <section className="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
-          <p>id page</p>
+          <p>id page: {params.id} / {newUrlId}</p>
+          {/* {data} */}
         </section>
       </main>
     </>
