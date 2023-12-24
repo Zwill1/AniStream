@@ -1,24 +1,20 @@
 "use server";
 
-import ProfileCard, { AnimePropCard } from "./components/ProfileCard";
+import ProfileCard from "./components/ProfileCard";
 
 export const fetchAnimeById = async (id : number) => {
 
-    const testres = await fetch(`https://shikimori.one/api/animes/?id=50`);
+    const response = await fetch(`https://shikimori.one/api/animes/${id}`);
 
-    const testresdata = await testres.json();
-
-    console.log(testresdata[0].id);
-    console.log("done");
-
-
-    // const response = await fetch(`https://shikimori.one/api/animes?id=${id}`);
-
-    // const data = await response.json();
+    const data = await response.json();
 
     // console.log(data);
 
-    // return data.map((item: AnimePropCard, index: number) => (
-    //     <ProfileCard key={item.id} anime={item} index={index} />
-    //   ));
+    // console.log("data from action " + data.image.original);
+
+    return (
+        // <p>id: {data.id} / {data.name} / {data.image.original}</p>
+        <ProfileCard anime={data.name} image={data.image.original} engName={data.english[0]} />
+      );
+
 };

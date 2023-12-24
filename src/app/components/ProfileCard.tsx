@@ -2,43 +2,40 @@ import Image from "next/image";
 import { MotionDiv } from "./MotionDiv";
 import Link from "next/link";
 
-export interface AnimePropCard {
-  id: string;
-  name: string;
-  image: {
-    original: string;
-  };
-  kind: string;
-  episodes: number;
-  episodes_aired: number;
-  score: string;
-}
+// export interface AnimePropCard {
+//   id: string;
+//   name: string;
+//   image: {
+//     original: string;
+//   };
+//   kind: string;
+//   episodes: number;
+//   episodes_aired: number;
+//   score: string;
+// }
 
-interface Prop {
-  anime: AnimePropCard;
-  index: number;
-}
+// interface Prop {
+//   anime: AnimePropCard;
+//   index: number;
+// }
 
-const variants = {
-  hidden: {opacity: 0},
-  visible: {opacity: 1},
-}
 
-function ProfileCard({ anime, index }: Prop) {
+function ProfileCard({ anime, image, engName } : any) {
+
+    console.log("This is the show " + anime);
   return (
-    <MotionDiv variants={variants} initial="hidden" animate="visible" transition={{delay: index * 0.25, ease: "easeInOut", duration: 0.5,}} viewport={{amount: 0}} className="max-w-sm rounded relative w-full">
+    <div className="max-w-sm rounded relative w-full">
+      <h2 className="text-3xl text-white font-bold">{anime}</h2>
+      <h3>{engName}</h3>
       <div className="relative w-full h-[37vh]">
-      <Link href={`/anime/${anime.id}`}>
         <Image
-          src={`https://shikimori.one${anime.image.original}`}
-          alt={anime.name}
+          src={`https://shikimori.one${image}}`}
+          alt={anime}
           fill
           className="rounded-xl"
         />
-      </Link>
-
       </div>
-      <div className="py-4 flex flex-col gap-3">
+      {/* <div className="py-4 flex flex-col gap-3">
         <div className="flex justify-between items-center gap-1">
           <h2 className="font-bold text-white text-xl line-clamp-1 w-full">
             {anime.name}
@@ -74,8 +71,8 @@ function ProfileCard({ anime, index }: Prop) {
             <p>anime id: {anime.id}</p>
           </div>
         </div>
-      </div>
-    </MotionDiv>
+      </div> */}
+    </div>
   );
 }
 
