@@ -1,40 +1,49 @@
 import Image from "next/image";
-import { MotionDiv } from "./MotionDiv";
-import Link from "next/link";
 
-// export interface AnimePropCard {
-//   id: string;
-//   name: string;
-//   image: {
-//     original: string;
-//   };
-//   kind: string;
-//   episodes: number;
-//   episodes_aired: number;
-//   score: string;
-// }
+export interface AnimeProfileCard {
+  id: string;
+  name: string;
+  image: {
+    original: string;
+  };
+  kind: string;
+  episodes: number;
+  episodes_aired: number;
+  score: string;
+  english: string;
+  description: string;
+}
 
-// interface Prop {
-//   anime: AnimePropCard;
-//   index: number;
-// }
+interface PropProfile {
+  anime: AnimeProfileCard;
+}
 
 
-function ProfileCard({ anime, image, engName } : any) {
+function ProfileCard({ anime } : PropProfile) {
 
-    console.log("This is the show " + anime);
+  // console.log("this is coming from profile card " + anime);
+
   return (
-    <div className="max-w-sm rounded relative w-full">
-      <h2 className="text-3xl text-white font-bold">{anime}</h2>
-      <h3>{engName}</h3>
-      <div className="relative w-full h-[37vh]">
-        <Image
-          src={`https://shikimori.one${image}}`}
-          alt={anime}
-          fill
-          className="rounded-xl"
-        />
+
+  <>
+    <div className="grid grid-cols-6 p-4">
+      <div className="max-w-sm rounded relative w-full">
+        <div className="relative w-full h-[37vh]">
+          <Image
+            src={`https://shikimori.one${anime.image.original}}`}
+            alt={anime.name}
+            fill
+            className="rounded-xl"
+          />
+        </div>
       </div>
+      <div className="grid grid-cols-subgrid gap-10 col-span-5">
+        <div className="col-start-1 px-10">
+          <h2 className="text-3xl text-white font-extrabold">{anime.name} / <span className="text-gray-500 italic text-sm">{anime.english}</span></h2>
+          <p>{anime.description}</p>
+        </div>
+      </div>
+
       {/* <div className="py-4 flex flex-col gap-3">
         <div className="flex justify-between items-center gap-1">
           <h2 className="font-bold text-white text-xl line-clamp-1 w-full">
@@ -73,6 +82,8 @@ function ProfileCard({ anime, image, engName } : any) {
         </div>
       </div> */}
     </div>
+
+  </>
   );
 }
 

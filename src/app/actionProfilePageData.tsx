@@ -8,13 +8,13 @@ export const fetchAnimeById = async (id : number) => {
 
     const data = await response.json();
 
-    // console.log(data);
+    console.log(data);
 
     // console.log("data from action " + data.image.original);
 
     return (
-        // <p>id: {data.id} / {data.name} / {data.image.original}</p>
-        <ProfileCard anime={data.name} image={data.image.original} engName={data.english[0]} />
+        // <ProfileCard anime={data.name} image={data.image.original} engName={data.english[0]} />
+        <ProfileCard anime={data}  />
       );
 
 };
