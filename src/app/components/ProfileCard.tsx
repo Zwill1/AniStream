@@ -12,6 +12,8 @@ export interface AnimeProfileCard {
   score: string;
   english: string;
   description: string;
+  aired_on: string;
+  status: string;
 }
 
 interface PropProfile {
@@ -40,6 +42,21 @@ function ProfileCard({ anime } : PropProfile) {
       <div className="grid grid-cols-subgrid gap-10 col-span-5">
         <div className="col-start-1 px-10">
           <h2 className="text-3xl text-white font-extrabold">{anime.name} / <span className="text-gray-500 italic text-sm">{anime.english}</span></h2>
+          <div className="flex flex-row w-full">
+            <div className="w-3/12 flex flex-row gap-2 items-center">
+              <Image
+                src="../star.svg"
+                alt="star"
+                width={18}
+                height={18}
+                className="object-contain"
+              />
+              <p className="text-base font-bold text-[#FFAD49]">Score: {anime.score}</p>
+            </div>
+            <p className="w-3/12">Episode: {anime.episodes}</p>
+            <p className="w-3/12">Aired On: {anime.aired_on}</p>
+            <p className="w-3/12">Status: {anime.status}</p>
+          </div>
           <p>{anime.description}</p>
         </div>
       </div>
@@ -77,7 +94,6 @@ function ProfileCard({ anime } : PropProfile) {
               className="object-contain"
             />
             <p className="text-base font-bold text-[#FFAD49]">{anime.score}</p>
-            <p>anime id: {anime.id}</p>
           </div>
         </div>
       </div> */}

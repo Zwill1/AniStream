@@ -71,7 +71,7 @@ function AnimeCard({ anime, index }: Prop) {
               className="object-contain"
             />
             <p className="text-base font-bold text-[#FFAD49]">{anime.score}</p>
-            <p>anime id: {anime.id}</p>
+            {/* <p>anime id: {anime.id}</p> */}
           </div>
         </div>
       </div>
