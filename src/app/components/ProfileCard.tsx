@@ -18,7 +18,8 @@ export interface AnimeProfileCard {
     preview: string
   }
   videos: {
-    url: string
+    url: string;
+    player_url: string;
   }
   rating: string;
 }
@@ -86,11 +87,11 @@ function ProfileCard({ anime } : PropProfile) {
       <h2 className="text-3xl text-white font-extrabold">Videos</h2>
     </div>
     <div className="flex flex-row w-full p-4 gap-4">
+      <div className="w-3/12">
+        <iframe width="100%" height="315" src={anime.videos[0].player_url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
       <div className="w-3/12 bg-red-100">
-        <video autoPlay style={{ width: '500px', height: '300px' }}>
-          <source src={anime.videos[0].url} />
-        </video>
-        {/* <p>s / {anime.videos[0].url}</p> */}
+        <iframe width="100%" height="315" src={anime.videos[1].player_url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
 
