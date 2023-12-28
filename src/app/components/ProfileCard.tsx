@@ -33,7 +33,8 @@ interface PropProfile {
 
 function ProfileCard({ anime } : PropProfile) {
 
-  // console.log("this is coming from profile card " + anime);
+  // console.log("this is coming from profile card");
+  // console.log(anime.name);
 
   return (
 

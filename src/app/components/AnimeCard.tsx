@@ -25,10 +25,18 @@ const variants = {
 }
 
 function AnimeCard({ anime, index }: Prop) {
+
+  // console.log("homepage card for anime");
+  // console.log(anime);
+
+  var currentAnimeName = anime.name;
+  currentAnimeName = currentAnimeName.replace(/\s+/g, '-').toLowerCase();
+  // console.log("anime name is " + currentAnimeName);
+
   return (
     <MotionDiv variants={variants} initial="hidden" animate="visible" transition={{delay: index * 0.25, ease: "easeInOut", duration: 0.5,}} viewport={{amount: 0}} className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
-      <Link href={`/anime/${anime.id}`}>
+      <Link href={`/anime/${anime.id}/${currentAnimeName}`}>
         <Image
           src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}

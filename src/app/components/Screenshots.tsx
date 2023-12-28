@@ -12,8 +12,8 @@ export interface ScreenshotCard {
 
 function VideoEmbed({ anime, index } : PropScreenshots) {
 
-    console.log("screenshot card");
-    console.log(anime);
+    // console.log("screenshot card");
+    // console.log(anime);
 
   return (
     <>
