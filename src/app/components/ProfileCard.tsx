@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export interface AnimeProfileCard {
   id: string;
@@ -22,6 +23,7 @@ export interface AnimeProfileCard {
     player_url: string;
   }
   rating: string;
+  myanimelist_id: number;
 }
 
 interface PropProfile {
@@ -78,45 +80,18 @@ function ProfileCard({ anime } : PropProfile) {
             <p className="w-3/12">Rating: {anime.rating}</p>
             <p className="w-3/12">Status: {anime.status}</p>
           </div>
-          <p>{anime.description}</p>
+          {/* Data toggle based on IF there is any profile data summary */}
+          {
+            anime.description ?
+            <p>{anime.description}</p> :
+            <p>No data for this profile</p>
+          }
+          <Link href={`https://myanimelist.net/anime/${anime.myanimelist_id}`} target="_blank">
+            <button className="px-5 py-2 bg-red-500 mt-5">MyAnimeList Profile</button>
+          </Link>
         </div>
       </div>
     </div>
-
-    <div className="flex flex-row w-full pl-4">
-      <h2 className="text-3xl text-white font-extrabold">Videos</h2>
-    </div>
-    <div className="flex flex-row w-full p-4 gap-4">
-      <div className="w-3/12">
-        <iframe width="100%" height="315" src={anime.videos[0].player_url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div className="w-3/12 bg-red-100">
-        <iframe width="100%" height="315" src={anime.videos[1].player_url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <div className="flex flex-row w-full pl-4">
-      <h2 className="text-3xl text-white font-extrabold">Screenshots</h2>
-    </div>
-    <div className="flex flex-row w-full p-4 gap-4">
-      <div className="w-3/12">
-        <Image
-          src={`https://shikimori.one${anime.screenshots[0].preview}`}
-          alt={anime.name}
-          width={500}
-          height={500}
-        />
-      </div>
-      <div className="w-3/12">
-        <Image
-          src={`https://shikimori.one${anime.screenshots[1].preview}`}
-          alt={anime.name}
-          width={500}
-          height={500}
-        />
-      </div>
-    </div>
-
   </>
   );
 }

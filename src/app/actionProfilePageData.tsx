@@ -1,6 +1,7 @@
 "use server";
 
 import ProfileCard from "./components/ProfileCard";
+import VideoEmbed, {AnimeVideoCard} from "./components/VideoEmbed";
 
 export const fetchAnimeById = async (id : number) => {
 
@@ -8,13 +9,14 @@ export const fetchAnimeById = async (id : number) => {
 
     const data = await response.json();
 
-    console.log(data);
+    // console.log(data);
 
     // console.log("data from action " + data.image.original);
 
     return (
-        // <ProfileCard anime={data.name} image={data.image.original} engName={data.english[0]} />
+      <>
         <ProfileCard anime={data}  />
+      </>
       );
 
 };
