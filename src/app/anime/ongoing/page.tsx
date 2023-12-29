@@ -1,8 +1,8 @@
-import { options } from "../api/auth/[...nextauth]/options"
+import { options } from "../../api/auth/[...nextauth]/options"
 import { getServerSession } from "next-auth/next"
 import { redirect } from "next/navigation"
-import { fetchOngoingAnime } from "../actionOngoing"
-import Hero from "../ui/Hero"
+import { fetchOngoingAnime } from "../../actionOngoing"
+import Hero from "../../ui/Hero"
 
 export default async function OnGoing() {
 

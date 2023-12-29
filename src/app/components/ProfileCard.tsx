@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./Button";
 
 export interface AnimeProfileCard {
   id: string;
@@ -88,7 +89,7 @@ function ProfileCard({ anime } : PropProfile) {
             <p>No data for this profile</p>
           }
           <Link href={`https://myanimelist.net/anime/${anime.myanimelist_id}`} target="_blank">
-            <button className="px-5 py-2 bg-red-500 mt-5">MyAnimeList Profile</button>
+            <Button>MyAnimeList Profile</Button>
           </Link>
         </div>
       </div>
