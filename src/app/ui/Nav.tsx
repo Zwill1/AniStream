@@ -4,6 +4,8 @@
 import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -15,9 +17,12 @@ export default function Navlinks() {
 
   // operates nav and mobile nav (use client)
   const [nav, setNav] = useState(false);
+  const [isDropDown, setDropDown] = useState(false);
 
   const handleClick = () => setNav(!nav);
   const handleClose = () => setNav(!nav);
+
+  const dropDownClick = () => setDropDown(!isDropDown);
 
   return (
   <>
@@ -49,13 +54,26 @@ export default function Navlinks() {
                 Schedule
               </Link>
             </li>
-            <li className="p-4">
-              <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`}>
-                Sign In
-              </Link>
-            </li>
+            <li className="p-4 flex" onClick={dropDownClick}>
+                  <span>Account {isDropDown ? <ExpandLessIcon /> : <ExpandMoreIcon />}</span>
+
+                  {/* placing in a dropdown menu on click. Use state to set the arrow */}
+                  <ul className={!isDropDown ? "hidden" : "absolute w-[185px] bg-gray-400 float-left text-center top-[50px] pt-1 pb-1 z-50" }>
+                    <li className="p-1">
+                      <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`}>
+                        Sign In
+                      </Link>
+                    </li>
+                    <li className="p-1">
+                      <Link href="/profile" className={`${pathname === '/profile' ? 'active' : ''}`}>
+                        Profile
+                      </Link>
+                    </li>
+                  </ul>
+              </li>
+
           </ul>
-        </div>
+        </div>        
         <div className="lg:hidden" onClick={handleClick}>
           {!nav ? (
             <MenuIcon className="w-5" />
