@@ -1,6 +1,6 @@
-import { fetchAnimeById } from "@/app/actionProfilePageData"
-import { fetchVideoEmbedById } from "@/app/actionVideoPageData";
-import { fetchScreenshotsById } from "@/app/actionScreenshotPageData";
+import { fetchAnimeById } from "@/app/actions/actionProfilePageData"
+import { fetchVideoEmbedById } from "@/app/actions/actionVideoPageData";
+import { fetchScreenshotsById } from "@/app/actions/actionScreenshotPageData";
 
 export default async function AnimeProfile({ params }: { params: { id: string } }) {
 

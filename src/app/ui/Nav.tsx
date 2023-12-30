@@ -49,15 +49,11 @@ export default function Navlinks() {
                 Anime
               </Link>
             </li>
-            <li className="p-4">
-              <Link href="/schedule" className={`${pathname === '/schedule' ? 'active' : ''}`}>
-                Schedule
-              </Link>
-            </li>
             <li className="p-4 flex" onClick={dropDownClick}>
+                  {/* uses isdropdown state to change the icon on the dropdown */}
                   <span>Account {isDropDown ? <ExpandLessIcon /> : <ExpandMoreIcon />}</span>
 
-                  {/* placing in a dropdown menu on click. Use state to set the arrow */}
+                  {/* placing in a dropdown menu on click. Use state to set the menu */}
                   <ul className={!isDropDown ? "hidden" : "absolute w-[185px] bg-gray-400 float-left text-center top-[50px] pt-1 pb-1 z-50" }>
                     <li className="p-1">
                       <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`}>
@@ -94,11 +90,6 @@ export default function Navlinks() {
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
           <Link href="/anime" className={`${pathname === '/anime' ? 'active' : ''}`} onClick={handleClose}>
             Anime
-          </Link>
-        </li>
-        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
-          <Link href="/schedule" className={`${pathname === '/schedule' ? 'active' : ''}`} onClick={handleClose}>
-            Schedule
           </Link>
         </li>
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">

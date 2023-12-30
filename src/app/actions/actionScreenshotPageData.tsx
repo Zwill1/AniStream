@@ -1,6 +1,6 @@
 "use server";
 
-import Screenshots, {ScreenshotCard} from "./components/Screenshots";
+import Screenshots, {ScreenshotCard} from "./../components/Screenshots";
 
 export const fetchScreenshotsById = async (id : number) => {
 

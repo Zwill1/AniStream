@@ -1,7 +1,6 @@
 "use server";
 
-import ProfileCard from "./components/ProfileCard";
-import VideoEmbed, {AnimeVideoCard} from "./components/VideoEmbed";
+import ProfileCard from "./../components/ProfileCard";
 
 export const fetchAnimeById = async (id : number) => {
 

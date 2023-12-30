@@ -1,6 +1,6 @@
 "use server";
 
-import VideoEmbed, {AnimeVideoCard} from "./components/VideoEmbed";
+import VideoEmbed, {AnimeVideoCard} from "./../components/VideoEmbed";
 
 export const fetchVideoEmbedById = async (id : number) => {
 

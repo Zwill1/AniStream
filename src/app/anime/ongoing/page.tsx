@@ -1,4 +1,4 @@
-import { fetchOngoingAnime } from "../../actionOngoing"
+import { fetchOngoingAnime } from "../../actions/actionOngoing"
 import HeroAnime from "@/app/ui/HeroAnime"
 
 export default async function OnGoing() {
