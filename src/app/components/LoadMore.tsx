@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { fetchAnime } from "../actions/action";
+import { fetchAnime } from "../actions/actionPopularity";
 import AnimeCard, { AnimeProp } from "./AnimeCard";
 
 let page = 2;

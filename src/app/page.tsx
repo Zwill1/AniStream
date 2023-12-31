@@ -3,7 +3,7 @@
 import AnimeCard, {AnimeProp} from "./components/AnimeCard";
 import LoadMore from "./components/LoadMore";
 // import { data } from "./_data";
-import { fetchAnime } from "./actions/action";
+import { fetchAnime } from "./actions/actionPopularity";
 import Hero from "./ui/Hero";
 
 async function Home() {

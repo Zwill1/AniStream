@@ -2,8 +2,8 @@
 
 import AnimeCard, { AnimeProp } from "./../components/AnimeCard";
 
-export const fetchAnime = async (page: number) => {
-    const response = await fetch(`https://shikimori.one/api/animes?page=${page}&limit=12&order=popularity`);
+export const fetchAnimeByRandom = async (limit : number) => {
+    const response = await fetch(`https://shikimori.one/api/animes?order=random&limit=${limit}`);
 
     const data = await response.json();
 
