@@ -8,6 +8,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import LoginBTN from "@/app/components/LoginBTN"
 
 export default function Navlinks() {
 
@@ -72,7 +73,7 @@ export default function Navlinks() {
                     </li>
                   </ul>
               </li>
-
+            <LoginBTN />
           </ul>
         </div>        
         <div className="lg:hidden" onClick={handleClick}>
@@ -100,6 +101,11 @@ export default function Navlinks() {
         <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
           <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`} onClick={handleClose}>
             Sign In
+          </Link>
+        </li>
+        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+          <Link href="/api/auth/signout" className={`${pathname === '/signout' ? 'active' : ''}`} onClick={handleClose}>
+            Sign Out
           </Link>
         </li>
       </ul>
