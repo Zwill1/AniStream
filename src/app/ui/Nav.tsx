@@ -54,12 +54,17 @@ export default function Navlinks() {
                   <span>Account {isDropDown ? <ExpandLessIcon /> : <ExpandMoreIcon />}</span>
 
                   {/* placing in a dropdown menu on click. Use state to set the menu */}
-                  <ul className={!isDropDown ? "hidden" : "absolute w-[185px] bg-gray-400 float-left text-center top-[50px] pt-1 pb-1 z-50" }>
+                  <ul className={!isDropDown ? "hidden" : "absolute w-[185px] bg-gray-400 float-left text-center top-[50px] pt-1 pb-1 z-50" }>  
                     <li className="p-1">
                       <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`}>
                         Sign In
                       </Link>
-                    </li>
+                    </li>                
+                    <li className="p-1">
+                      <Link href="/api/auth/signout" className={`${pathname === '/signout' ? 'active' : ''}`}>
+                        Sign Out
+                      </Link>
+                    </li>                                    
                     <li className="p-1">
                       <Link href="/profile" className={`${pathname === '/profile' ? 'active' : ''}`}>
                         Profile

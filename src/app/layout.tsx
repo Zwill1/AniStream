@@ -1,8 +1,10 @@
 
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Nav from './ui/Nav'
+import AuthProvider from './context/AuthProvider'
 
 // layout
 
@@ -19,14 +21,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Nav />
-        {/* <main className="max-w-7xl mx-auto bg-[#0F1117]"> */}
-        <main className="w-full bg-[#0F1117]">
-        {children}
-        </main>
-      </body>
-    </html>
+      <html lang="en">
+        <body className={inter.className}>
+          <AuthProvider>
+            <Nav />
+            {/* <main className="max-w-7xl mx-auto bg-[#0F1117]"> */}
+            <main className="w-full bg-[#0F1117]">
+            {children}
+            </main>
+          </AuthProvider>
+        </body>
+      </html>
   )
 }

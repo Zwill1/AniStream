@@ -1,8 +1,4 @@
-// import Image from 'next/image'
-
-import AnimeCard, {AnimeProp} from "./components/AnimeCard";
 import LoadMore from "./components/LoadMore";
-// import { data } from "./_data";
 import { fetchAnime } from "./actions/actionPopularity";
 import Hero from "./ui/Hero";
 

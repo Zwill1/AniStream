@@ -2,8 +2,8 @@
 
 import AnimeCard, { AnimeProp } from "./../components/AnimeCard";
 
-export const fetchAnimeByType = async (limit : number) => {
-    const response = await fetch(`https://shikimori.one/api/animes?order=kind&limit=${limit}`);
+export const fetchAnimeByType = async (page : number) => {
+    const response = await fetch(`https://shikimori.one/api/animes?page=${page}&order=kind&limit=6`);
 
     const data = await response.json();
 

@@ -8,13 +8,13 @@ import HeroAnime from "../ui/HeroAnime";
 
 async function Anime() {
 
-  const data = await fetchAnimeLimitByPopularity(1,6);
+  const data = await fetchAnimeLimitByPopularity(1);
 
-  const randomAnimeData = await fetchAnimeByRandom(6);
+  const randomAnimeData = await fetchAnimeByRandom(1);
 
-  const alphabeticalOrder = await fetchAnimeByAlphabeticalOrder(6);
+  const alphabeticalOrder = await fetchAnimeByAlphabeticalOrder(1);
 
-  const animeByType = await fetchAnimeByType(6);
+  const animeByType = await fetchAnimeByType(1);
 
   return (
     <>
