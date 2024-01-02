@@ -11,7 +11,7 @@ export default function Component() {
       <>     
       <li className="p-4 flex">
         <span>
-          Signed in as {session?.user.name} <button className="px-2 bg-red-500" onClick={() => signOut()}>Sign out</button>
+          Welcome, <span className="italic font-bold">{session?.user.name}</span> <button className="px-2 bg-red-500" onClick={() => signOut()}>Sign out</button>
         </span>
       </li>
       </>

@@ -10,8 +10,17 @@ export default async function Profile() {
   } 
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <p>Profile page</p>
-    </main>
+    <div className="w-full">
+      <main className="flex flex-col">
+        <section className="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
+        <p>Profile page</p>
+        <p>Profile page</p>
+        <p>Profile page</p>
+        <p>Profile page</p>
+        <p>Profile page</p>
+        <p>Profile page</p>
+        </section>
+      </main>
+    </div>
   )
 }
