@@ -10,17 +10,15 @@ export default async function Profile() {
   } 
 
   return (
-    <div className="w-full">
-      <main className="flex flex-col">
-        <section className="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
-        <p>Profile page</p>
-        <p>Profile page</p>
-        <p>Profile page</p>
-        <p>Profile page</p>
-        <p>Profile page</p>
-        <p>Profile page</p>
-        </section>
-      </main>
-    </div>
+    <>
+      <div className="w-full lg:flex flex-wrap flex-row">
+        <p className="w-3/12 bg-red-300">Profile pic</p>
+        <p className="w-9/12 bg-red-800">Profile desc</p>
+      </div>
+      <div className="w-full lg:flex flex-wrap flex-row">
+        <p className="w-3/12 bg-red-300">Profile pic</p>
+        <p className="w-9/12 bg-red-800">Profile desc</p>
+      </div>
+    </>
   )
 }
