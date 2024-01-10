@@ -1,6 +1,6 @@
 import ProfileFriends from "./ProfileFriends"
 import ProfileSideBarPosts from "./ProfileSideBarPosts"
-import ProfileSideStatsButton from "./ProfileSideStatsButton"
+import ProfileSideStatsButton from "../ProfileSideStatsButton"
 
 export default function ProfileSideStatsBar() {
     return (

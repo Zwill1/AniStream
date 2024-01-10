@@ -4,8 +4,8 @@ import Image from "next/image";
 import { redirect } from "next/navigation"
 
 // Loads stats under the profile image
-import ProfileSideStatsBar from "../components/ProfileSideStatsBar";
-import ProfileCategoryStats from "../components/ProfileCategoryStats";
+import ProfileSideStatsBar from "../components/Profile/ProfileSideStatsBar";
+import ProfileCategoryStats from "../components/Profile/ProfileCategoryStats";
 
 
 export default async function Profile() {

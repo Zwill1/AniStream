@@ -1,6 +1,6 @@
-import AnimeUpdates from "./AnimeUpdates";
+import MangaUpdates from './MangaUpdates'
 
-export default function AnimeUpdatesHeading() {
+export default function MangaUpdatesHeading() {
   return (
     <>
         <div className="lg:w-6/12 w-full px-2">
@@ -8,7 +8,7 @@ export default function AnimeUpdatesHeading() {
             <p>Last Anime Updates</p>
             <p>Anime History</p>
             </div>
-            <AnimeUpdates />
+            <MangaUpdates />
         </div>
     </>
   )

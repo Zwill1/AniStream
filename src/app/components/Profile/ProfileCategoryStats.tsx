@@ -1,5 +1,7 @@
-import AnimeStatsHeading from "./Profile/AnimeStatsHeading";
-import AnimeUpdatesHeading from "./Profile/AnimeUpdatesHeading";
+import AnimeStatsHeading from "./AnimeStatsHeading";
+import AnimeUpdatesHeading from "./AnimeUpdatesHeading";
+import MangaStatsHeading from "./MangaStatsHeading";
+import MangaUpdatesHeading from "./MangaUpdatesHeading";
 
 export default function ProfileCategoryStats() {
   return (
@@ -12,6 +14,10 @@ export default function ProfileCategoryStats() {
       <div className="lg:flex w-full">
         <AnimeStatsHeading />
         <AnimeUpdatesHeading />
+      </div>
+      <div className="lg:flex w-full">
+        <MangaStatsHeading />
+        <MangaUpdatesHeading />
       </div>
       
       {/* Content data. Table 1 */}
