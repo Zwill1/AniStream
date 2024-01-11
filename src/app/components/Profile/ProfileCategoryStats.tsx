@@ -20,36 +20,6 @@ export default function ProfileCategoryStats() {
         <MangaUpdatesHeading />
       </div>
       
-      {/* Content data. Table 1 */}
-
-      {/* <div className="w-full lg:flex">      
-        <div className="w-6/12">
-          <div className="flex justify-between px-2">
-            <p>Joined</p>
-            <p>May 11, 2010</p>
-          </div>
-          <div className="flex">
-
-            <div className="w-6/12">
-              <div className="flex justify-between px-2">
-                <p>Watching</p>
-                <p>(number)</p>
-              </div>
-            </div>
-            <div className="w-6/12">
-              <div className="flex justify-between px-2">
-                <p>Total Entries</p>
-                <p>(number)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-6/12 px-5">1</div>
-      </div> */}
-
-
-
-
       {/* <div className="w-full lg:flex">      
         <div className="w-6/12 px-5">2</div>
         <div className="w-6/12 px-5">2</div>

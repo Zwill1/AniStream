@@ -8,7 +8,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import LoginBTN from "@/app/components/LoginBTN"
+import NavLoginLI from "@/app/components/NavLoginLI"
+import WelcomeAccountName from "../components/WelcomeAccountName";
 
 export default function Navlinks() {
 
@@ -40,6 +41,7 @@ export default function Navlinks() {
         </div>
         <div>
           <ul className="hidden lg:flex pr-4">
+            <WelcomeAccountName />
             <li className="p-4">
               <Link href="/" className={`${pathname === '/' ? 'active' : ''}`}>
                 Home
@@ -50,30 +52,15 @@ export default function Navlinks() {
                 Anime
               </Link>
             </li>
-            <li className="p-4 flex" onClick={dropDownClick}>
+            <li className="p-4 flex cursor-pointer" onClick={dropDownClick}>
                   {/* uses isdropdown state to change the icon on the dropdown */}
                   <span>Account {isDropDown ? <ExpandLessIcon /> : <ExpandMoreIcon />}</span>
 
                   {/* placing in a dropdown menu on click. Use state to set the menu */}
                   <ul className={!isDropDown ? "hidden" : "absolute w-[185px] bg-gray-400 float-left text-center top-[50px] pt-1 pb-1 z-50" }>  
-                    <li className="p-1">
-                      <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`}>
-                        Sign In
-                      </Link>
-                    </li>                
-                    <li className="p-1">
-                      <Link href="/api/auth/signout" className={`${pathname === '/signout' ? 'active' : ''}`}>
-                        Sign Out
-                      </Link>
-                    </li>                                    
-                    <li className="p-1">
-                      <Link href="/profile" className={`${pathname === '/profile' ? 'active' : ''}`}>
-                        Profile
-                      </Link>
-                    </li>
+                    <NavLoginLI />
                   </ul>
               </li>
-            <LoginBTN />
           </ul>
         </div>        
         <div className="lg:hidden" onClick={handleClick}>
