@@ -2,6 +2,9 @@ import MangaStats from "./MangaStats";
 
 export default function MangaStatsHeading() {
 
+    // Calculations to get total days of reading
+
+
   return (
     <>
         <div className="lg:w-6/12 w-full px-2">
