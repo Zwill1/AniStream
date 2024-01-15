@@ -1,4 +1,11 @@
+import * as mangaObj from '../../data/mangaStatsData.json';
 export default function MangaStats() {
+
+    // bring in a local json file with all the stats for anime being watched
+
+    const mangaData = mangaObj[0];
+    // console.log(mangaData.Reading);
+
     return (
       <>
       <div className="w-full">
@@ -6,12 +13,12 @@ export default function MangaStats() {
           {/* Row #1 */}
           <div className="w-full lg:px-4 lg:flex lg:py-1">
               <div className="flex lg:w-6/12 justify-between px-2 lg:px-10">
-                  <p>Watching</p>
-                  <p>(number)</p>
+                  <p>Reading</p>
+                  <p>{mangaData.Reading}</p>
               </div>
               <div className="flex lg:w-6/12 justify-between px-2 lg:px-10">
                   <p>Total Entries</p>
-                  <p>(number)</p>
+                  <p>{mangaData.TotalEntries}</p>
               </div>
           </div>
   
@@ -19,11 +26,11 @@ export default function MangaStats() {
           <div className="w-full lg:px-4 lg:flex lg:py-1">
               <div className="flex lg:w-6/12 justify-between px-2 lg:px-10">
                   <p>Completed</p>
-                  <p>(number)</p>
+                  <p>{mangaData.Completed}</p>
               </div>
               <div className="flex lg:w-6/12 justify-between px-2 lg:px-10">
-                  <p>Rewatched</p>
-                  <p>(number)</p>
+                  <p>Reread</p>
+                  <p>{mangaData.Reread}</p>
               </div>
           </div>
   
@@ -31,11 +38,11 @@ export default function MangaStats() {
           <div className="w-full lg:px-4 lg:flex lg:py-1">
               <div className="flex lg:w-6/12 justify-between px-2 lg:px-10">
                   <p>On-Hold</p>
-                  <p>(number)</p>
+                  <p>{mangaData.OnHold}</p>
               </div>
               <div className="flex lg:w-6/12 justify-between px-2 lg:px-10">
-                  <p>Episode</p>
-                  <p>(number)</p>
+                  <p>Chapters</p>
+                  <p>{mangaData.Chapters}</p>
               </div>
           </div>
   
@@ -43,11 +50,11 @@ export default function MangaStats() {
           <div className="w-full lg:px-4 lg:flex lg:py-1">
               <div className="flex lg:w-6/12 justify-between px-2 lg:px-10">
                   <p>Dropped</p>
-                  <p>(number)</p>
+                  <p>{mangaData.Dropped}</p>
               </div>
               <div className="flex lg:w-6/12 justify-between px-2 lg:px-10">
-                  <p>Plan to Watch</p>
-                  <p>(number)</p>
+                  <p>Plan to Read</p>
+                  <p>{mangaData.PlanToRead}</p>
               </div>
           </div>
   

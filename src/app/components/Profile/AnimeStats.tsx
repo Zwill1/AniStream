@@ -1,5 +1,3 @@
-"use client";
-import { useState, useEffect } from 'react'
 import * as dataObj from "../../data/animeStatsData.json"
 export default function AnimeStats() {
 
@@ -22,7 +20,7 @@ export default function AnimeStats() {
     // if (!data) return <p>No Anime data</p>
 
     const data = dataObj[0];
-    console.log(data.Watching);
+    // console.log(data.Watching);
 
   return (
     <>
