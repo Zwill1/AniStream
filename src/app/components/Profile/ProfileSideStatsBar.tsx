@@ -1,4 +1,3 @@
-import ProfileFriends from "./ProfileFriends"
 import ProfileSideBarPosts from "./ProfileSideBarPosts"
 import ProfileSideStatsButton from "../ProfileSideStatsButton"
 
@@ -18,16 +17,7 @@ export default function ProfileSideStatsBar() {
             <ProfileSideStatsButton>Link one</ProfileSideStatsButton>
             <ProfileSideStatsButton>Link two</ProfileSideStatsButton>
           </div>
-          <div className="flex justify-between px-2">
-            <p>History</p>
-            <p>(Number)</p>
-          </div>
-          <div className="flex justify-between px-2">
-            <p>Favorites</p>
-            <p>(Number)</p>
-          </div>
           <ProfileSideBarPosts />
-          <ProfileFriends />
         </div>
       </>
     )
