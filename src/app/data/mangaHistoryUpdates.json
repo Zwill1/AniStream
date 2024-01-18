@@ -1,0 +1,30 @@
+[
+    {
+      "id": "1",
+      "name": "Bleach, Vol. 1",
+      "image": {
+        "original":
+          "https://m.media-amazon.com/images/I/81vbN16NtXL._SY466_.jpg"
+      },
+      "pages": 192,
+      "online_rating": "4.7",
+      "language": "English",
+      "publisher": "VIZ Media LLC",
+      "pub_date": "July 6 2004",
+      "updated_when": "2 hours ago"
+    },
+    {
+        "id": "2",
+        "name": "Black Clover, Vol. 1",
+        "image": {
+          "original":
+            "https://m.media-amazon.com/images/I/91dyTOTuCjL._SY466_.jpg"
+        },
+        "pages": 192,
+        "online_rating": "4.8",
+        "language": "English",
+        "publisher": "VIZ Media LLC",
+        "pub_date": "June 7 2016",
+        "updated_when": "5 hours ago"
+      }
+  ]

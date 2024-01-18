@@ -26,18 +26,18 @@ function AnimeUpdatesCard({ anime, index }: Prop) {
   return (
     <div className="flex">
         <div className="flex-1 md:flex-2">
-        <Image src={anime.image.original} width={100} height={100} alt="Image" className="max-w-full mb-4" />
+        <Image src={anime.image.original} width={75} height={75} alt="Image" className="max-w-full mb-4" />
         </div>
         <div className="flex-1 md:flex-auto">
         <div>
-            <p className="text-center">{anime.name}</p>
-            <p className="text-center">Watching <span className="font-bold">{anime.episode_watched}</span> / <span className="font-bold">{anime.episodes}</span></p>
-            <p className="text-center"><span className="font-bold">{anime.score}</span></p>
-            <p className="text-center">{anime.kind}</p>
+            <p className="text-center text-sm">{anime.name}</p>
+            <p className="text-center text-sm">Watching <span className="font-bold">{anime.episode_watched}</span> / <span className="font-bold">{anime.episodes}</span></p>
+            <p className="text-center text-sm"><span className="font-bold">{anime.score}</span></p>
+            <p className="text-center text-sm">{anime.kind}</p>
         </div>
         </div>
         <div className="flex-1 md:flex-2">
-        <p className="text-right">{anime.updated_when}</p>
+        <p className="text-right text-sm">{anime.updated_when}</p>
         </div>
     </div>
   );
