@@ -1,4 +1,3 @@
-import Image from "next/image";
 import AnimeUpdatesList from "./AnimeUpdatesList";
 
 export default function AnimeUpdates() {

@@ -9,7 +9,8 @@
       "kind": "TV",
       "episodes": 366,
       "episodes_aired": 366,
-      "score": "7.92"
+      "score": "7.92",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "2",
@@ -21,7 +22,8 @@
       "kind": "TV",
       "episodes": 170,
       "episodes_aired": 170,
-      "score": "7.16"
+      "score": "7.16",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "3",
@@ -33,7 +35,8 @@
       "kind": "TV",
       "episodes": 153,
       "episodes_aired": 153,
-      "score": "8.68"
+      "score": "8.68",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "4",
@@ -45,7 +48,8 @@
       "kind": "TV",
       "episodes": 24,
       "episodes_aired": 24,
-      "score": "8.78"
+      "score": "8.78",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "5",
@@ -57,7 +61,8 @@
       "kind": "TV",
       "episodes": 64,
       "episodes_aired": 64,
-      "score": "9.24"
+      "score": "9.24",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "6",
@@ -69,7 +74,8 @@
       "kind": "TV",
       "episodes": 220,
       "episodes_aired": 220,
-      "score": "8.3"
+      "score": "8.3",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "7",
@@ -81,7 +87,8 @@
       "kind": "TV",
       "episodes": 367,
       "episodes_aired": 367,
-      "score": "9.0"
+      "score": "9.0",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "9",
@@ -93,7 +100,8 @@
       "kind": "TV",
       "episodes": 1030,
       "episodes_aired": 1030,
-      "score": "8.58"
+      "score": "8.58",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "10",
@@ -105,7 +113,8 @@
       "kind": "TV",
       "episodes": 26,
       "episodes_aired": 26,
-      "score": "8.6"
+      "score": "8.6",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "11",
@@ -116,7 +125,8 @@
       "kind": "TV",
       "episodes": 75,
       "episodes_aired": 75,
-      "score": "9.16"
+      "score": "9.16",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "12",
@@ -128,7 +138,8 @@
       "kind": "TV",
       "episodes": 148,
       "episodes_aired": 148,
-      "score": "9.1"
+      "score": "9.1",
+      "updated_when": "2 hours ago"
     },
     {
       "id": "13",
@@ -140,6 +151,7 @@
       "kind": "TV",
       "episodes": 114,
       "episodes_aired": 114,
-      "score": "8.39"
+      "score": "8.39",
+      "updated_when": "2 hours ago"
     }
   ]
