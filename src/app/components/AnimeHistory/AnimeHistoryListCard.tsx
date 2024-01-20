@@ -18,7 +18,7 @@ interface Prop {
 
 function AnimeHistoryListCard({anime, index}: Prop) {
   return (
-    <div className="">
+    <div className="flex lg:w-6/12 px-10 lg:px-0 mx-auto border-t border-gray-600 p-5">
         <div className="flex-1 md:flex-2">
         <Image src={anime.image.original} width={75} height={75} alt="Image" className="max-w-full mb-4" />
         </div>
