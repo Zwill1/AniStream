@@ -14,12 +14,12 @@ export default function Component() {
     return (
       <>     
       <li className="p-1">
-        <Link href="/profile" className={`${pathname === '/profile' ? 'active' : ''}`}>
+        <Link href="/profile" className={`${pathname === '/profile' ? 'active block' : 'block'}`}>
             Profile
         </Link>
       </li>
       <li className="p-1">
-        <span onClick={() => signOut()}>
+        <span className="block" onClick={() => signOut()}>
           Sign out
         </span>
       </li>
@@ -29,7 +29,7 @@ export default function Component() {
   return (
     <>
       <li className="p-1 cursor-pointer">
-        <span className="" onClick={() => signIn()}>
+        <span className="block" onClick={() => signIn()}>
           Sign in
         </span>
       </li>
