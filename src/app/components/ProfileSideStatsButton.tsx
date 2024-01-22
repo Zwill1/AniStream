@@ -1,7 +1,18 @@
-export default function ProfileSideStatsButton({ children }: { children: React.ReactNode }) {
+import Link from "next/link";
+
+interface Prop {
+  children: React.ReactNode;
+  url: string;
+}
+
+// { children }: { children: React.ReactNode }
+
+export default function ProfileSideStatsButton({ children, url }: Prop) {
     return (
       <>
-          <button className={`px-5 py-2 mt-5 bg-red-500 w-full`}>{children}</button>
+          <button className={`px-5 py-2 mt-5 bg-red-500 w-full block`}>
+            <Link className="block" href={url}>{children}</Link>
+          </button>
       </>
     )
   }

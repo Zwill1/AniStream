@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Button from "../components/Button"
 
-export default function HeroAnime({message, btnURL}: { message: string, btnURL: string }){
+export default function HeroAnime(){
   return (
     <>
     <section className="md:flex w-full flex-row-reverse">
@@ -17,11 +17,9 @@ export default function HeroAnime({message, btnURL}: { message: string, btnURL: 
     />
     </div>
     <div className="md:w-6/12 text-center px-10 py-20 bg-gray-800">
-      <h1 className="pb-2">Welcome to COMPANY NAME HERE</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <Link href={btnURL}>
-            <Button>{message}</Button>
-      </Link>
+      <h1 className="pb-2">Welcome to NextJS App</h1>
+      <p>Welcome to NextJS App – a haven crafted with love for anime enthusiasts like you! Immerse yourself in a captivating realm where your passion for Japanese animation is celebrated. Whether youre an avid otaku or just embarking on your anime journey, our community is your home. Explore our carefully curated library featuring timeless classics and the latest releases, connecting you with unforgettable characters and epic stories. Engage in lively discussions within our forums, swap recommendations, and uncover hidden gems.</p>
+      <Button url={"/anime/ongoing"}>Ongoing Page</Button>
     </div>
     </section>
     </>

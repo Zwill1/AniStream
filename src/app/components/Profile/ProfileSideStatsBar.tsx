@@ -14,8 +14,8 @@ export default function ProfileSideStatsBar() {
             <p>May 11, 2010</p>
           </div>
           <div className="flex justify-between px-2 gap-2">
-            <ProfileSideStatsButton>Link one</ProfileSideStatsButton>
-            <ProfileSideStatsButton>Link two</ProfileSideStatsButton>
+            <ProfileSideStatsButton url={"/profile/anime-history"}>Anime History</ProfileSideStatsButton>
+            <ProfileSideStatsButton url={"/profile/manga-history"}>Manga History</ProfileSideStatsButton>
           </div>
           <ProfileSideBarPosts />
         </div>
