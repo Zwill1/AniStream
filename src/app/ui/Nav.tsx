@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import NavLoginLI from "@/app/components/NavLoginLI"
 import WelcomeAccountName from "../components/WelcomeAccountName";
+import NavMobileDropdownLoginLi from "../components/NavMobileDropdownLoginLi";
 
 export default function Navlinks() {
 
@@ -28,7 +29,7 @@ export default function Navlinks() {
 
   return (
   <>
-    <section className="border-b-2">
+    <section className="border-b-2 border-black">
       <div className="flex justify-between md:w-full h-14 w-10/12 mx-auto container items-center">
         <div>
           <h1 className="flex">
@@ -57,7 +58,7 @@ export default function Navlinks() {
                   <span>Account {isDropDown ? <ExpandLessIcon /> : <ExpandMoreIcon />}</span>
 
                   {/* placing in a dropdown menu on click. Use state to set the menu */}
-                  <ul className={!isDropDown ? "hidden" : "absolute w-[185px] bg-gray-400 float-left text-center top-[50px] pt-1 pb-1 z-50" }>  
+                  <ul className={!isDropDown ? "hidden" : "absolute w-[185px] bg-white float-left text-center top-[50px] pt-1 z-50" }>  
                     <NavLoginLI />
                   </ul>
               </li>
@@ -73,28 +74,29 @@ export default function Navlinks() {
       </div>
       <ul
         className={
-          !nav ? "hidden" : "absolute bg-slate-700 w-full lg:hidden z-50"
+          !nav ? "hidden" : "absolute bg-white w-full lg:hidden z-50"
         }>
-        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+        {/* <li className="border-zinc-300 w-full mx-auto pt-4 pb-4 text-center border-b border-gray-200">
           <Link href="/" className={`${pathname === '/' ? 'active' : ''}`} onClick={handleClose}>
             Home
           </Link>
         </li>
-        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+        <li className="border-zinc-300 w-full mx-auto pt-4 pb-4 text-center border-b border-gray-200">
           <Link href="/anime" className={`${pathname === '/anime' ? 'active' : ''}`} onClick={handleClose}>
             Anime
           </Link>
         </li>
-        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+        <li className="border-zinc-300 w-full mx-auto pt-4 pb-4 text-center border-b border-gray-200">
           <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`} onClick={handleClose}>
             Sign In
           </Link>
         </li>
-        <li className="border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+        <li className="border-zinc-300 w-full mx-auto pt-4 pb-4 text-center border-b border-gray-200">
           <Link href="/api/auth/signout" className={`${pathname === '/signout' ? 'active' : ''}`} onClick={handleClose}>
             Sign Out
           </Link>
-        </li>
+        </li> */}
+        <NavMobileDropdownLoginLi />
       </ul>
     </section>
   </>

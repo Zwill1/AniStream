@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Button from "./Button";
 
 export interface AnimeProfileCard {
@@ -78,19 +77,17 @@ function ProfileCard({ anime } : PropProfile) {
             </div>
 
             
-            <p className="w-3/12">Aired On: {anime.aired_on}</p>
-            <p className="w-3/12">Rating: {anime.rating}</p>
-            <p className="w-3/12">Status: {anime.status}</p>
+            <p className="w-3/12 text-white">Aired On: {anime.aired_on}</p>
+            <p className="w-3/12 text-white">Rating: {anime.rating}</p>
+            <p className="w-3/12 text-white">Status: {anime.status}</p>
           </div>
           {/* Data toggle based on IF there is any profile data summary */}
           {
             anime.description ?
-            <p>{anime.description}</p> :
-            <p>No data for this profile</p>
+            <p className="text-white">{anime.description}</p> :
+            <p className="text-white">No data for this profile</p>
           }
-          <Link href={`https://myanimelist.net/anime/${anime.myanimelist_id}`} target="_blank">
-            <Button>MyAnimeList Profile</Button>
-          </Link>
+          <Button target={"_blank"} url={`https://myanimelist.net/anime/${anime.myanimelist_id}`}>MyAnimeList Profile</Button>
         </div>
       </div>
     </div>

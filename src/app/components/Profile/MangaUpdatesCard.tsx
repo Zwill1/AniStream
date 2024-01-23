@@ -28,15 +28,15 @@ function MangaUpdatesCard({ manga, index }: Prop) {
         </div>
         <div className="flex-1 md:flex-auto">
         <div>
-            <p className="text-center text-sm">{manga.name}</p>
-            <p className="text-center text-sm"><span className="font-bold">{manga.pages}</span> Pages</p>
-            <p className="text-center text-sm">Rating: <span className="font-bold">{manga.online_rating}</span></p>
-            <p className="text-center text-sm">{manga.publisher}</p>
-            <p className="text-center text-sm">Released: {manga.pub_date}</p>
+            <p className="text-center text-sm text-white">{manga.name}</p>
+            <p className="text-center text-sm text-white"><span className="font-bold">{manga.pages}</span> Pages</p>
+            <p className="text-center text-sm text-white">Rating: <span className="font-bold">{manga.online_rating}</span></p>
+            <p className="text-center text-sm text-white">{manga.publisher}</p>
+            <p className="text-center text-sm text-white">Released: {manga.pub_date}</p>
         </div>
         </div>
         <div className="flex-1 md:flex-2">
-        <p className="text-right text-sm">{manga.updated_when}</p>
+        <p className="text-right text-sm text-white">{manga.updated_when}</p>
         </div>
     </div>
   );

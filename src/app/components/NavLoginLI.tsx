@@ -13,12 +13,12 @@ export default function Component() {
   if (session) {
     return (
       <>     
-      <li className="p-1">
+      <li className="p-1 border-b border-gray-200">
         <Link href="/profile" className={`${pathname === '/profile' ? 'active block' : 'block'}`}>
             Profile
         </Link>
       </li>
-      <li className="p-1">
+      <li className="p-1 border-b border-gray-200">
         <span className="block" onClick={() => signOut()}>
           Sign out
         </span>

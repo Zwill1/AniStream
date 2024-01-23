@@ -24,8 +24,8 @@ export default function MangaStatsHeading() {
               <p><Link href="#" className="text-blue-500">All Manga Stats</Link></p>
             </div>
             <div className="flex justify-between py-1 lg:py-2">
-              <p>Days: <span className="font-bold">{chapterTotalByDays.toFixed(2)}</span></p>
-              <p>Mean Score: <span className="font-bold">0.00</span></p>
+              <p className="text-white">Days: <span className="font-bold">{chapterTotalByDays.toFixed(2)}</span></p>
+              <p className="text-white">Mean Score: <span className="font-bold">0.00</span></p>
             </div>
             <MangaStats />
         </div>

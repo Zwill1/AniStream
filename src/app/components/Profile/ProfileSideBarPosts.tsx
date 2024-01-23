@@ -9,57 +9,57 @@ export default function ProfileSideBarPosts() {
     <>
         <section className="py-2">
           <div className="flex justify-between px-2">
-            <p>History</p>
-            <p>{profileStat.History}</p>
+            <p className="text-white">History</p>
+            <p className="text-white">{profileStat.History}</p>
           </div>
           <div className="flex justify-between px-2">
-            <p>Favorites</p>
-            <p>{profileStat.Favorites}</p>
+            <p className="text-white">Favorites</p>
+            <p className="text-white">{profileStat.Favorites}</p>
           </div>
         </section>
 
         <section className="py-2">
             <div className="flex justify-between px-2 border-t border-gray-700">
-              <p>Forum Posts</p>
-              <p>{profileStat.ForumPosts}</p>
+              <p className="text-white">Forum Posts</p>
+              <p className="text-white">{profileStat.ForumPosts}</p>
             </div>
             <div className="flex justify-between px-2">
-              <p>Reviews</p>
-              <p>{profileStat.Reviews}</p>
+              <p className="text-white">Reviews</p>
+              <p className="text-white">{profileStat.Reviews}</p>
             </div>
             <div className="flex justify-between px-2">
-              <p>History</p>
-              <p>{profileStat.HistoryPost}</p>
+              <p className="text-white">History</p>
+              <p className="text-white">{profileStat.HistoryPost}</p>
             </div>
             <div className="flex justify-between px-2">
-              <p>Recommendations</p>
-              <p>{profileStat.Recommendations}</p>
+              <p className="text-white">Recommendations</p>
+              <p className="text-white">{profileStat.Recommendations}</p>
             </div>
             <div className="flex justify-between px-2">
-              <p>Interests</p>
-              <p>{profileStat.Interests}</p>
+              <p className="text-white">Interests</p>
+              <p className="text-white">{profileStat.Interests}</p>
             </div>
             <div className="flex justify-between px-2">
-              <p>Blog Posts</p>
-              <p>{profileStat.BlogPosts}</p>
+              <p className="text-white">Blog Posts</p>
+              <p className="text-white">{profileStat.BlogPosts}</p>
             </div>
             <div className="flex justify-between px-2">
-              <p>Clubs</p>
-              <p>{profileStat.Clubs}</p>
+              <p className="text-white">Clubs</p>
+              <p className="text-white">{profileStat.Clubs}</p>
             </div>
           </section>
           
           <section className="py-2">
             <div className="px-2 border-b border-gray-700">
-                <h2>Friends</h2>
+                <h2 className="text-white">Friends</h2>
             </div>
             <div className="flex justify-between px-2">
-                <p>History</p>
-                <p>{profileStat.HistoryFriends}</p>
+                <p className="text-white">History</p>
+                <p className="text-white">{profileStat.HistoryFriends}</p>
             </div>
             <div className="flex justify-between px-2">
-                <p>Clubs</p>
-                <p>{profileStat.FriendClubs}</p>
+                <p className="text-white">Clubs</p>
+                <p className="text-white">{profileStat.FriendClubs}</p>
             </div>
           </section>
     </>

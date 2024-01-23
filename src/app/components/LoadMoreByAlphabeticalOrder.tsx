@@ -32,7 +32,7 @@ function LoadMoreByAlphabeticalOrder() {
         {data}
       </section>
       <section>
-        <button className="w-full px-5 py-2 bg-green-600" onClick={() => setIsSending(true)}>Load More</button>
+        <button className="w-full px-5 py-2 bg-green-600 text-white font-bold" onClick={() => setIsSending(true)}>Load More</button>
       </section>
     </>
   );
