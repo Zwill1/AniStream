@@ -36,7 +36,7 @@ export default function Navlinks() {
             <Link
               href="/"
               className="font-bold mr-4 text-2xl sm:text-3xl md:text-4xl uppercase">
-              NextJS App
+              AniStream
             </Link>
           </h1>
         </div>
@@ -76,27 +76,8 @@ export default function Navlinks() {
         className={
           !nav ? "hidden" : "absolute bg-white w-full lg:hidden z-50"
         }>
-        {/* <li className="border-zinc-300 w-full mx-auto pt-4 pb-4 text-center border-b border-gray-200">
-          <Link href="/" className={`${pathname === '/' ? 'active' : ''}`} onClick={handleClose}>
-            Home
-          </Link>
-        </li>
-        <li className="border-zinc-300 w-full mx-auto pt-4 pb-4 text-center border-b border-gray-200">
-          <Link href="/anime" className={`${pathname === '/anime' ? 'active' : ''}`} onClick={handleClose}>
-            Anime
-          </Link>
-        </li>
-        <li className="border-zinc-300 w-full mx-auto pt-4 pb-4 text-center border-b border-gray-200">
-          <Link href="/signin" className={`${pathname === '/signin' ? 'active' : ''}`} onClick={handleClose}>
-            Sign In
-          </Link>
-        </li>
-        <li className="border-zinc-300 w-full mx-auto pt-4 pb-4 text-center border-b border-gray-200">
-          <Link href="/api/auth/signout" className={`${pathname === '/signout' ? 'active' : ''}`} onClick={handleClose}>
-            Sign Out
-          </Link>
-        </li> */}
-        <NavMobileDropdownLoginLi />
+        {/* passing down a client component to a server component */}
+        <NavMobileDropdownLoginLi handle={handleClose} />
       </ul>
     </section>
   </>

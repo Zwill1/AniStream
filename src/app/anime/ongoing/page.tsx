@@ -1,3 +1,4 @@
+import Footer from "@/app/ui/Footer";
 import { fetchOngoingAnime } from "../../actions/actionOngoing"
 import HeroAnime from "@/app/ui/HeroAnime"
 
@@ -10,7 +11,7 @@ export default async function OnGoing() {
   return (
     <>
       <section className="w-full">
-        <HeroAnime message='Track your shows NOW!' btnURL='/signin' />
+        <HeroAnime />
       </section>
       <main className="sm:p-16 py-16 px-8 flex flex-col gap-10">
         <h2 className="text-3xl text-white font-bold">Highest Rated Ongoing Anime</h2>
@@ -19,6 +20,9 @@ export default async function OnGoing() {
           {data}
         </section>
       </main>
+      <section className="w-full">
+        <Footer />
+      </section>
     </>
   )
 }

@@ -10,6 +10,7 @@ import LoadMoreByPopularity from "../components/LoadMoreByPopularity";
 import LoadMoreByRandom from "../components/LoadMoreByRandom";
 import LoadMoreByAlphabeticalOrder from "../components/LoadMoreByAlphabeticalOrder";
 import LoadMoreByType from "../components/LoadMoreByType";
+import Footer from "../ui/Footer";
 
 
 async function Anime() {
@@ -53,6 +54,9 @@ async function Anime() {
         </section>
         <LoadMoreByType />
       </main>
+      <section className="w-full">
+        <Footer />
+      </section>
     </>
   )
 }

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { fetchAnimeByType } from "../actions/actionAnimeByType"; 
 import AnimeCard from "./AnimeCard";
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 let page = 2;
 
@@ -32,7 +33,7 @@ function LoadMoreByType() {
         {data}
       </section>
       <section>
-        <button className="w-full px-5 py-2 bg-green-600 text-white font-bold" onClick={() => setIsSending(true)}>Load More</button>
+        <button className="w-full px-5 py-2 bg-green-600 hover:bg-green-900 text-white font-bold" onClick={() => setIsSending(true)}>Load More <ChevronRightIcon /></button>
       </section>
     </>
   );
