@@ -1,6 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AniStream
 
-## Getting Started
+## Project Description
+
+AniStream is a streaming application built on NextJS that showcases popular animated shows by popularity, alphabetical order, random, type and ongoing. The profile cards of the shows can be clicked and show the description of the show, the title, show rating, show score, episode count, when the show aired and the status of it. The anime profile includes screenshots of the show, promotion videos embeded on the page and a link to MyAnimeList anime profile for further information. The home page showcases a endless page scroll on popular shows in order. AniStream allows a user to sign in with credentials or a GitHub account including the ability to sign out using server sessions. The account profile shows stats of anime and manga watched with an API call. The profile section comes with anime and manga history tabs which display lists of recent activity or updated shows/series watched on the right side as well as buttons under the profile image for access to those pages. All data for anime shows, profile stats are called from either an external API and Local Json files.
+
+#### AniStream was configured to show the ID/slug in the URL
+
+Example: "/anime/5114/fullmetal-alchemist:-brotherhood"
+
+Uses the anime page layout, gets the ID from the API, adds it to the URL. 
+
+We then extra the title from the API, replace all income "_" with "-" for SEO friendly URL's and add that after the ID.
+
+
+
 
 First, run the development server:
 
@@ -20,22 +33,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
 
 ## Packages
 
-clsx - Conditional classnames https://www.npmjs.com/package/clsx
+* clsx - Conditional classnames https://www.npmjs.com/package/clsx
