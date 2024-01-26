@@ -54,8 +54,10 @@ Credentials for this project are hardcoded.
 
 ## Log in Details
 
-### Username: admin
-### Password: password
+```bash
+admin
+password
+```
 
 ## Packages
 
