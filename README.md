@@ -20,10 +20,10 @@ Example: "/anime/5114/fullmetal-alchemist:-brotherhood"
 
 #### ID Config
 
-* gets the ID from the API
-* adds it to the URL. 
+* Gets the ID from the API
+* Adds it to the URL. 
 
-### Slug Configt
+### Slug Config
 
 * Gets the title from the API
 * Replace all incoming url names that have "_" with "-" for SEO friendly URL's
@@ -34,7 +34,7 @@ Find out more about dynamic routing: https://nextjs.org/docs/app/building-your-a
 
 ## How does the application load more anime shows to the page?
 
-WIP
+The green "Load More" button loops over the action of loading the next row of shows depending on the category selected. The loop increments and keeps track of the count with a limit of 6 loading per click.
 
 ## How to run this application
 
