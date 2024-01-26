@@ -2,19 +2,35 @@
 
 ## Project Description
 
-AniStream is a streaming application built on NextJS that showcases popular animated shows by popularity, alphabetical order, random, type and ongoing. The profile cards of the shows can be clicked and show the description of the show, the title, show rating, show score, episode count, when the show aired and the status of it. 
+AniStream is a streaming application built on NextJS that showcases popular animated shows by popularity, alphabetical order, random, type and ongoing. 
 
-The anime profile includes screenshots of the show, promotion videos embeded on the page and a link to MyAnimeList anime profile for further information. The home page showcases a endless page scroll on popular shows in order. AniStream allows a user to sign in with credentials or a GitHub account including the ability to sign out using server sessions. 
+The profile cards of the shows can be clicked and show the description of the show, the title, show rating, show score, episode count, when the show aired and the status of it. The anime profile includes screenshots of the show, promotion videos embeded on the page and a link to MyAnimeList anime profile for further information. 
 
-The account profile shows stats of anime and manga watched with an API call. The profile section comes with anime and manga history tabs which display lists of recent activity or updated shows/series watched on the right side as well as buttons under the profile image for access to those pages. All data for anime shows, profile stats are called from either an external API and Local Json files.
+Home page showcases a endless page scroll on popular shows in order. AniStream allows a user to sign in with credentials or a GitHub account including the ability to sign out using server sessions. 
 
-## AniStream was configured to show the ID/slug in the URL
+The account profile shows stats of anime and manga watched. The profile section comes with anime and manga history tabs which display lists of recent activity or updated shows/series watched on the right side as well as buttons under the profile image for access to those pages. 
+
+All data for anime shows, profile stats are called from either an external API and local JSON files.
+
+## AniStream URL configurations
+
+The intent for SEO friendly URL was to provide an ID for the anime with an SEO frieldly slug in the URL consisting of the name of the show
 
 Example: "/anime/5114/fullmetal-alchemist:-brotherhood"
 
-Uses the anime page layout, gets the ID from the API, adds it to the URL. 
+#### ID Config
 
-We then extra the title from the API, replace all income "_" with "-" for SEO friendly URL's and add that after the ID.
+* gets the ID from the API
+* adds it to the URL. 
+
+### Slug Configt
+
+* Gets the title from the API
+* Replace all incoming url names that have "_" with "-" for SEO friendly URL's
+* Add that after the ID.
+
+Find out more about dynamic routing: https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes
+
 
 ## How does the application load more anime shows to the page?
 
