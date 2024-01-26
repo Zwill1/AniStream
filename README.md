@@ -18,7 +18,7 @@ The intent for SEO friendly URL was to provide an ID for the anime with an SEO f
 
 Example: "/anime/5114/fullmetal-alchemist:-brotherhood"
 
-#### ID Config
+### ID Config
 
 * Gets the ID from the API
 * Adds it to the URL. 
@@ -47,6 +47,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Logging in with Credentials Provider
+
+Credentials for this project are hardcoded.
+
+## Log in Details
+
+### Username: admin
+### Password: password
 
 ## Packages
 
