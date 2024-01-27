@@ -59,7 +59,7 @@ admin
 password
 ```
 
-## Packages
+## NPM Packages
 
 * NextJS - The React Framework for the Web https://nextjs.org/
 * React - The library for web and native user interfaces https://react.dev/
