@@ -54,9 +54,7 @@ async function Anime() {
         </section>
         <LoadMoreByType />
       </main>
-      <section className="w-full">
-        <Footer />
-      </section>
+      <Footer />
     </>
   )
 }
