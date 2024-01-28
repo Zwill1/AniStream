@@ -18,9 +18,6 @@ export default async function AnimeHistory() {
       <div className="w-full flex-wrap flex-row py-5 pt-10">
         <MangaHistoryList />
       </div>
-      <section className="w-full">
-        <Footer />
-      </section>
     </>
   )
 }

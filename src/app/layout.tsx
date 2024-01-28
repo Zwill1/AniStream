@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Nav from './ui/Nav'
 import AuthProvider from './context/AuthProvider'
+import Footer from './ui/Footer'
 
 // layout
 
@@ -29,6 +30,7 @@ export default function RootLayout({
             <main className="w-full bg-[#0F1117]">
             {children}
             </main>
+            <Footer />
           </AuthProvider>
         </body>
       </html>

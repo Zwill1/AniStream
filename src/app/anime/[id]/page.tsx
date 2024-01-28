@@ -37,9 +37,6 @@ export default async function AnimeProfile({ params }: { params: { id: string } 
       <div className="flex flex-row w-full p-4 gap-4">
         {videoData}
       </div>
-      <section className="w-full">
-        <Footer />
-      </section>
     </>
   )
 }

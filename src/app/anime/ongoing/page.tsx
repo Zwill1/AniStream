@@ -20,9 +20,6 @@ export default async function OnGoing() {
           {data}
         </section>
       </main>
-      <section className="w-full">
-        <Footer />
-      </section>
     </>
   )
 }

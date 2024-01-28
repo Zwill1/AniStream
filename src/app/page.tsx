@@ -1,7 +1,6 @@
 import LoadMore from "./components/LoadMore";
 import { fetchAnime } from "./actions/actionPopularity";
 import Hero from "./ui/Hero";
-import Footer from "./ui/Footer";
 
 async function Home() {
 
@@ -20,9 +19,6 @@ async function Home() {
         </section>
         <LoadMore />
       </main>
-      <section className="w-full">
-        <Footer />
-      </section>
     </>
   )
 }

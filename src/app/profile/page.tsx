@@ -37,9 +37,6 @@ export default async function Profile() {
         <ProfileSideStatsBar />
         <ProfileCategoryStats />
       </div>
-      <section className="w-full">
-        <Footer />
-      </section>
     </>
   )
 }
