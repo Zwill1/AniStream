@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Button from "../components/Button"
+import HelloWorld from "./Banner"
 
 export default function Hero() {
   return (
@@ -21,6 +22,7 @@ export default function Hero() {
       <Button url={"/signin"}>Sign in NOW!</Button>
     </div>
     </section>
+    <HelloWorld />
     </>
   )
 }

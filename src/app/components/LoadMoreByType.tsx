@@ -33,7 +33,7 @@ function LoadMoreByType() {
         {data}
       </section>
       <section>
-        <button className="w-full px-5 py-2 bg-green-600 hover:bg-green-900 text-white font-bold" onClick={() => setIsSending(true)}>Load More <ChevronRightIcon /></button>
+        <button className="w-full px-5 py-2 bg-green-600 hover:bg-green-900 text-white font-bold" onClick={() => setIsSending(true)}>Load 6 More Shows <ChevronRightIcon /></button>
       </section>
     </>
   );
