@@ -1,36 +1,42 @@
 "use client";
 
-function HelloWorld() {
+import Image from "next/image";
+
+function BannerHero() {
     return (
-      <div>
-        Hello world
-        <p>scoped!</p>
+      <>
+        <div className="md:w-6/12 text-center flex content-center">
+        <Image
+          src=""
+          alt="placeholder hero image"
+          className="dark:invert heroImage"
+          width={1900}
+          height={400}
+          priority
+        />
         <style jsx>{`
-          p {
-            color: blue;
-        }
         /* displays anything past 1500px */
-          div {
+          .heroImage {
             background: red;
           }
         /* displays anything under 1500px */ 
           @media (max-width: 1500px) {
-            div {
+            .heroImage {
               background: yellow;
             }
           }
           @media (max-width: 1200px) {
-            div {
+            .heroImage {
               background: pink;
             }
           }
           @media (max-width: 900px) {
-            div {
+            .heroImage {
               background: blue;
             }
           }
           @media (max-width: 600px) {
-            div {
+            .heroImage {
               background: orange;
             }
           }
@@ -41,7 +47,8 @@ function HelloWorld() {
           }
         `}</style>
       </div>
+      </>
     )
   }
    
-  export default HelloWorld
+  export default BannerHero
