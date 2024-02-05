@@ -6,9 +6,9 @@ function BannerHero() {
       {/* Small screens */}
       <div className="sm:block md:hidden md:w-6/12 text-center flex content-center">
       <Image
-        src="/images/hero-1900x400.png"
+        src="/images/banner-1900-400.jpg"
         alt="placeholder hero image"
-        className="dark:invert heroImage"
+        className="heroImage"
         width={1900}
         height={400}
         priority
@@ -18,9 +18,9 @@ function BannerHero() {
       {/* Medium screens */}
     <div className="hidden md:block lg:hidden md:w-full text-center flex content-center">
       <Image
-        src="/images/hero-1900x1200.png"
+        src="/images/banner-1900-400.jpg"
         alt="placeholder hero image"
-        className="dark:invert heroImage"
+        className="heroImage"
         width={1900}
         height={400}
         priority
@@ -30,9 +30,9 @@ function BannerHero() {
       {/* Large screens */}
     <div className="hidden md:hidden lg:block xl:hidden lg:w-full text-center flex content-center">
       <Image
-        src="/images/hero-1900x400.png"
+        src="/images/banner-1900-400.jpg"
         alt="placeholder hero image"
-        className="dark:invert heroImage"
+        className="heroImage"
         width={1900}
         height={400}
         priority
@@ -42,9 +42,9 @@ function BannerHero() {
       {/* XL screens */}
     <div className="hidden md:hidden xl:block md:w-6/12 text-center flex content-center">
       <Image
-        src="/images/hero-1900x1200.png"
+        src="/images/banner-1900-1200.jpg"
         alt="placeholder hero image"
-        className="dark:invert heroImage"
+        className="heroImage"
         width={1900}
         height={400}
         priority
