@@ -72,3 +72,9 @@ TypeScript icon, indicating that this package has built-in type declarations
 * Framer Motion - A production-ready motion library for React https://www.framer.com/motion/
 * clsx - Conditional classnames https://www.npmjs.com/package/clsx
 * Material Icons - https://mui.com/material-ui/material-icons/
+
+## API for Show Collections
+
+Anime - https://shikimori.one/api/doc/1.0/animes
+
+Example Data: https://shikimori.one/api/animes/51009
